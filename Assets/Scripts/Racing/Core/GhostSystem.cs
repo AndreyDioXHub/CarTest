@@ -5,13 +5,16 @@ using UnityEngine;
 public class GhostSystem : MonoBehaviour
 {
 	[Header("Settings")]
-	[SerializeField] private float _recordInterval = 0.05f;
+	[SerializeField] 
+	private float _recordInterval = 0.05f;
 
 	[Header("Wheels")]
-	[SerializeField] private List<Transform> _wheels = new List<Transform>();
+	[SerializeField] 
+	private List<Transform> _wheels = new List<Transform>();
 
 	private bool _isRecording;
 	private float _timer;
+	[SerializeField]
 	private List<RecordState> _recording = new List<RecordState>();
 
 	public void StartRecording()
